@@ -1,0 +1,213 @@
+
+
+body{
+  color: white;
+  margin: 0px;
+  background-color:#9C948D;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'Brandon Grotesque';
+}
+
+header{
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.navbar{
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size:20px;
+}
+
+
+.personal{
+  font-weight:bold;
+  text-decoration: none;
+  color:white;
+}
+
+.about{
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name{
+  font-family:'Brandon Grotesque';
+  font-size:50px;
+  font-weight:normal;
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.bio{
+  font-family: 'Crimson Text';
+  font-size:17.5px;
+  font-weight:bold;
+  color: white;
+  text-decoration: none;
+}
+
+.doe, .doe-color-overlay {
+    height: 450px;
+    width: 675px;
+}
+
+.photos{
+  text-align: center;
+}
+
+@keyframes upDown{
+   0% { transform: translateY(20px); }
+   50% { transform: translateY(-20px); }
+   100% { transform: translateY(20px); }
+}
+
+.arrow{
+  margin-bottom:60px;
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+
+.doe{
+  display: inline-block;
+  overflow: hidden;
+  float: center;
+  position:relative;
+  doe-color-overlay;
+  position:relative;
+  doe-text;
+  margin-bottom: 60px;
+}
+
+.doe-color-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.doe-color-overlay:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+    background-color: white;
+}
+
+
+.doe-text {
+    visibility: hidden;
+    position:absolute;
+    bottom:10px;
+    left:15px;
+    color: white;
+    font-family:'Crimson Text';
+    font-size:21.25px;
+    font-weight: normal;
+}
+
+.doe:hover .doe-color-overlay{
+    opacity: 0.5;
+}
+
+.doe:hover .doe-text{
+    visibility: visible;
+}
+
+.everything{
+  display: flex;
+  flex-direction: column;
+}
+
+.whitebox{
+  background: white;
+  width: 100%;
+  height: 800px;
+}
+
+.content {
+    width: 800px;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+h1 {
+  font-family:'Brandon Grotesque';
+  font-size:50px;
+  font-weight:bold;
+  color:#35322f;
+}
+
+h2 {
+  font-family:'Brandon Grotesque';
+  color:#35322f;
+  font-weight: bolder;
+}
+
+p {
+  font-family:'Crimson Text';
+  color: #5d5b59;
+  line-height:35px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.box1{
+  position: relative;
+  text-align: center;
+  background: black;
+  height: 50px;
+  width: 150px;
+  margin-right: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2{
+  text-align: center;
+  background: black;
+  height: 50px;
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin{
+  font-size: 20px;
+}
+
+.linkedinlink{
+  text-decoration: none;
+  color: white;
+}
+
+.resumepdf{
+  text-decoration: none;
+  color: white;
+}
+
+.resume{
+  font-size: 20px;
+}

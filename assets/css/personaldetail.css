@@ -1,0 +1,169 @@
+
+
+body{
+  color: white;
+  margin: 0px;
+  background-color:#6596A6;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'Brandon Grotesque';
+}
+
+header{
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+
+.navbar{
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size:20px;
+}
+
+
+.prof{
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+
+.about{
+  font-weight:bold;
+  text-decoration: none;
+  color:white;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name{
+  font-family:'Brandon Grotesque';
+  font-size:50px;
+  font-weight:normal;
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.bio{
+  font-family: 'Crimson Text';
+  font-size:17.5px;
+  font-weight:bold;
+  color: white;
+  text-decoration: none;
+}
+
+.cruz, .cruz-color-overlay {
+    height: 450px;
+    width: 675px;
+}
+
+.photos{
+  text-align: center;
+}
+
+@keyframes upDown{
+   0% { transform: translateY(20px); }
+   50% { transform: translateY(-20px); }
+   100% { transform: translateY(20px); }
+}
+
+.arrow{
+  margin-bottom:60px;
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+
+.cruz{
+  display: inline-block;
+  overflow: hidden;
+  float: center;
+  position:relative;
+  cruz-color-overlay;
+  position:relative;
+  cruz-text;
+  margin-bottom: 60px;
+}
+
+.cruz-color-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.cruz-color-overlay:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+    background-color: white;
+}
+
+
+.cruz-text {
+    visibility: hidden;
+    position:absolute;
+    bottom:10px;
+    left:15px;
+    color: white;
+    font-family:'Crimson Text';
+    font-size:21.25px;
+    font-weight: normal;
+}
+
+.cruz:hover .cruz-color-overlay{
+    opacity: 0.5;
+}
+
+.cruz:hover .cruz-text{
+    visibility: visible;
+}
+
+.everything{
+  display: flex;
+  flex-direction: column;
+}
+
+.whitebox{
+  background: white;
+  width: 100%;
+  height: 930px;
+}
+
+.content {
+    width: 800px;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+h1 {
+  font-family:'Brandon Grotesque';
+  font-size:50px;
+  font-weight:bold;
+  color:#35322f;
+}
+
+h2 {
+  font-family:'Brandon Grotesque';
+  color:#35322f;
+  font-weight: bolder;
+}
+
+p {
+  font-family:'Crimson Text';
+  color: #5d5b59;
+  line-height:35px;
+}
+
+.beach{
+  margin-top: 50px;
+  text-align: center;
+}

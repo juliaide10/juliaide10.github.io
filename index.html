@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+        <title>Julia Ide</title>
+    </head>
+
+    <body>
+      <header>
+        <div class="navbar">
+          <div class="personal"> <a class = "personal" href ="personalhome.html"> PERSONAL </a></div>
+          <div class="prof"><a class = "prof" href ="profhome.html">PROFESSIONAL</a></div>
+        </div>
+
+        <div class="tag">
+          <p id="name"></p>
+            <div class="bio"> LA TO THE BAY</div>
+        </div>
+
+      </header>
+
+      <div class="photos">
+        <div class="cruz"><a class = "personal" href ="personalhome.html"><img src= "assets/img/cruz-right.jpg"/ height=350px"> </a></div>
+        <div class="tahoe">
+          <a class = "tahoe" href ="indexdetail.html">
+            <img src= "assets/img/tahoe.jpg"/ height=450px">
+            <div class="tahoe-color-overlay"> </div>
+            <div class="tahoe-text">About Me</div>
+          </a>
+        </div>
+        <div class="doe"> <a class = "prof" href ="profhome.html"> <img src= "assets/img/doe-left.jpg"/ height="350px"> </a></div>
+      </div>
+
+      <div class="contact">
+        <div class="welcome"> welcome to my website! </div>
+        <div class="email"> juliaide@berkeley.edu </div>
+      </div>
+
+      <script>
+      window.onload = function() {
+        var i = 0;
+        var txt = 'J U L I A  \xa0 I D E';
+        var speed = 180;
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("name").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        document.onmouseover = typeWriter;
+      }
+      </script>
+
+    </body>
+</html>

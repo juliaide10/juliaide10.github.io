@@ -1,0 +1,145 @@
+
+
+body{
+  color: white;
+  margin: 0px;
+  background-color:black;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'Brandon Grotesque';
+}
+
+header{
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.navbar{
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size:20px;
+}
+
+
+.prof{
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+
+.about{
+  font-weight:bold;
+  text-decoration: none;
+  color:white;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name{
+  font-family:'Brandon Grotesque';
+  font-size:50px;
+  font-weight:normal;
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.bio{
+  font-family: 'Crimson Text';
+  font-size:17.5px;
+  font-weight:bold;
+  color: white;
+  text-decoration: none;
+}
+
+.photos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cruz, .cruz-color-overlay {
+    height: 450px;
+    width: 675px
+}
+
+.cruz{
+  display: inline-block;
+  float: center;
+  overflow: hidden;
+  position:relative;
+  cruz-color-overlay;
+  position:relative;
+  cruz-text;
+}
+
+.cruz-color-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.cruz-color-overlay:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+    background-color: black;
+}
+
+
+.cruz-text {
+    visibility: hidden;
+    position:absolute;
+    bottom:10px;
+    left:15px;
+    color: white;
+    font-family:'Crimson Text';
+    font-size:21.25px;
+    font-weight: normal;
+}
+
+.cruz:hover .cruz-color-overlay{
+    opacity: 0.7;
+}
+
+.cruz:hover .cruz-text{
+    visibility: visible;
+}
+
+
+.contact{
+  font-size:5px;
+  font-weight:normal;
+  color: white;
+  text-decoration: none;
+}
+
+.contact{
+  margin-top:125px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom:30px;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content:space-between;
+  font-size:15px;
+  font-weight:lighter;
+  font-family: 'Crimson Text';
+}
+
+.welecome{
+  text-align: left;
+}
+
+.email{
+  text-align: right;
+}
